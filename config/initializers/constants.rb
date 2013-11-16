@@ -1,0 +1,1 @@
+ARTICLE_QUEUE = 'journono_article_queue'

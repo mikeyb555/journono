@@ -1,0 +1,8 @@
+  development:
+    dynamo_db_endpoint: dynamodb.us-east-1.amazonaws.com
+
+  test:
+    dynamo_db_endpoint: dynamodb.us-east-1.amazonaws.com
+
+  production:
+    dynamo_db_endpoint: dynamodb.us-east-1.amazonaws.com
