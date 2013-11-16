@@ -15,4 +15,10 @@ namespace :journono do
     end
   end
 
+  desc "Test"
+  task :test => [:environment] do
+    article = Article.limit(1)
+    article[0].analyse
+  end
+
 end
