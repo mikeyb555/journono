@@ -9,6 +9,7 @@ class Site
   field :url
   field :last_scan, :datetime
   field :module_class, :integer
+  field :content_container, :string
 
   def get_module
     if self.module.nil?

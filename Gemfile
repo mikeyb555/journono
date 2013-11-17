@@ -33,7 +33,11 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'feedzirra'
 
+gem 'highscore'
+
 gem 'travis'
+
+gem 'mechanize'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
