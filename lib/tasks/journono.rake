@@ -19,13 +19,10 @@ namespace :journono do
   task :wiki => [:environment] do
     require 'wikipedia'
     require 'google-search'
-    search = Google::Search::Web.new :query => 'Cambell Newman bikies wikipedia'
-    search.get_hash["responseData"]["results"].each do |result|
-      if result["url"].include? 'wikipedia'
-        page = Wikipedia.find(result["url"])
-        puts page.content
-
-      end
+    search = Google::Search::Web.new :query => 'site:en.wikipedia.org Campbell Newman bikies'
+    search.get_hash["responseData"]["results"].first(5).each do |result|
+      page = Wikipedia.find(result["url"])
+      puts page.content
     end
 
 
